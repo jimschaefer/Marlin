@@ -27,3 +27,7 @@
 
 #define BOARD_INFO_NAME "Melzi (ATmega1284)"
 #include "pins_MELZI.h"
+#if ENABLED(BLTOUCH)
+  #define SERVO0_PIN                         27
+  #undef BEEPER_PIN
+#endif
