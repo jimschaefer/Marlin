@@ -427,12 +427,12 @@
 //#define TEMP_SENSOR_1_AS_REDUNDANT
 #define MAX_REDUNDANT_TEMP_SENSOR_DIFF 10
 
-#define TEMP_RESIDENCY_TIME     10  // (seconds) Time to wait for hotend to "settle" in M109
-#define TEMP_WINDOW              1  // (°C) Temperature proximity for the "temperature reached" timer
+#define TEMP_RESIDENCY_TIME      5  // (seconds) Time to wait for hotend to "settle" in M109
+#define TEMP_WINDOW              2  // (°C) Temperature proximity for the "temperature reached" timer
 #define TEMP_HYSTERESIS          3  // (°C) Temperature proximity considered "close enough" to the target
 
-#define TEMP_BED_RESIDENCY_TIME 10  // (seconds) Time to wait for bed to "settle" in M190
-#define TEMP_BED_WINDOW          1  // (°C) Temperature proximity for the "temperature reached" timer
+#define TEMP_BED_RESIDENCY_TIME  5  // (seconds) Time to wait for bed to "settle" in M190
+#define TEMP_BED_WINDOW          2  // (°C) Temperature proximity for the "temperature reached" timer
 #define TEMP_BED_HYSTERESIS      3  // (°C) Temperature proximity considered "close enough" to the target
 
 // Below this temperature the heater will be switched off
@@ -488,11 +488,16 @@
 //  #define DEFAULT_Ki 1.08
 //  #define DEFAULT_Kd 114
 
-  // JVS iMakrStartt (after autotune)
-#define DEFAULT_Kp 16.45
-#define DEFAULT_Ki 0.93
-#define DEFAULT_Kd 72.42
+  // JVS iMakrStartt (after autotune 4/15/2020 witout fan running)
+//#define DEFAULT_Kp 16.45
+//#define DEFAULT_Ki 0.93
+//#define DEFAULT_Kd 72.42
 
+  // JVS iMakrStartt (after autotune 4/15/2020 WITH fan running)
+  #define DEFAULT_Kp 25.57
+  #define DEFAULT_Ki 1.90
+  #define DEFAULT_Kd 85.88
+  
   // MakerGear
   //#define DEFAULT_Kp 7.0
   //#define DEFAULT_Ki 0.1
@@ -2268,3 +2273,4 @@
 
 // Allow servo angle to be edited and saved to EEPROM
 //#define EDITABLE_SERVO_ANGLES
+

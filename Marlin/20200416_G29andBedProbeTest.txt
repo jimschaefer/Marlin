@@ -1,0 +1,781 @@
+Send: M111 S247
+Recv: echo:DEBUG:ECHO,INFO,ERRORS,COMMUNICATION,LEVELING
+Recv: ok
+[...]
+Send: G28
+[...]
+Recv: echo:G28
+Recv: >>> G28
+Recv: Machine Type: Cartesian
+Recv: Probe: BLTOUCH
+Recv: Probe Offset X-40.00 Y1.00 Z-2.70 (Left-Back & Below Nozzle)
+Recv: Auto Bed Leveling: 3POINT (disabled)
+Recv: 
+Recv: Raise Z (before homing) to 8.00
+Recv: >>> do_blocking_move_to X0.00 Y0.00 Z8.00
+Recv: <<< do_blocking_move_to
+Recv: >>> homeaxis(X)
+Recv: Home 1 Fast:
+Recv: >>> do_homing_move(X, -195.00, [50.00])
+Recv: <<< do_homing_move(X)
+Recv: Move Away:
+Recv: >>> do_homing_move(X, 5.00, [50.00])
+Recv: <<< do_homing_move(X)
+Recv: Home 2 Slow:
+Recv: >>> do_homing_move(X, -10.00, 25.00)
+Recv: <<< do_homing_move(X)
+Recv: >>> set_axis_is_at_home(X)
+Recv: Axis 88 home_offset = 0.00 position_shift = 0.00
+Recv: > home_offset[X] = 0.00
+Recv:   current_position= X0.00 Y0.00 Z8.00 :
+Recv: <<< set_axis_is_at_home(X)
+Recv:   current_position= X0.00 Y0.00 Z8.00 : sync_plan_position
+Recv:   current_position= X0.00 Y0.00 Z8.00 : > AFTER set_axis_is_at_home
+Recv: <<< homeaxis(X)
+Recv: >>> homeaxis(Y)
+Recv: Home 1 Fast:
+Recv: >>> do_homing_move(Y, -195.00, [50.00])
+Recv: <<< do_homing_move(Y)
+Recv: Move Away:
+Recv: >>> do_homing_move(Y, 5.00, [50.00])
+[...]
+Recv: <<< do_homing_move(Y)
+Recv: Home 2 Slow:
+Recv: >>> do_homing_move(Y, -10.00, 25.00)
+Recv: <<< do_homing_move(Y)
+Recv: >>> set_axis_is_at_home(Y)
+Recv: Axis 89 home_offset = 0.00 position_shift = 0.00
+Recv: > home_offset[Y] = 0.00
+Recv:   current_position= X0.00 Y0.00 Z8.00 :
+Recv: <<< set_axis_is_at_home(Y)
+Recv:   current_position= X0.00 Y0.00 Z8.00 : sync_plan_position
+Recv:   current_position= X0.00 Y0.00 Z8.00 : > AFTER set_axis_is_at_home
+Recv: <<< homeaxis(Y)
+Recv: BLTouch Command :160
+Recv: BLTouch Command :90
+Recv: last_written_mode - 0
+Recv: config mode - OD
+Recv: home_z_safely >>>
+Recv:   current_position= X0.00 Y0.00 Z8.00 : sync_plan_position
+Recv:   destination= X105.00 Y64.00 Z10.70 : home_z_safely
+Recv: >>> do_blocking_move_to X105.00 Y64.00 Z8.00
+Recv: <<< do_blocking_move_to
+[...]
+Recv: >>> homeaxis(Z)
+Recv:   current_position= X105.00 Y64.00 Z8.00 : Probe::set_deployed
+Recv: deploy: 1
+Recv: Probe::move_z(10.00)
+Recv: >>> do_blocking_move_to X105.00 Y64.00 Z12.70
+Recv: <<< do_blocking_move_to
+[...]
+Recv: BLTouch DEPLOY requested
+Recv: BLTouch Command :10
+Recv: bltouch.deploy_proc() end
+Recv: >>> do_blocking_move_to X105.00 Y64.00 Z12.70
+Recv: <<< do_blocking_move_to
+Recv: Home 1 Fast:
+Recv: BLTouch DEPLOY requested
+Recv: BLTouch Command :10
+Recv: bltouch.deploy_proc() end
+Recv: >>> do_homing_move(Z, -150.00, [8.00])
+[...]
+Recv: <<< do_homing_move(Z)
+Recv: BLTouch STOW requested
+Recv: BLTouch Command :90
+Recv: bltouch.stow_proc() end
+Recv: Move Away:
+Recv: >>> do_homing_move(Z, 5.00, 8.00)
+[...]
+Recv: <<< do_homing_move(Z)
+Recv: Home 2 Slow:
+Recv: BLTouch DEPLOY requested
+Recv: BLTouch Command :10
+Recv: bltouch.deploy_proc() end
+Recv: >>> do_homing_move(Z, -10.00, 8.00)
+[...]
+Recv: <<< do_homing_move(Z)
+Recv: BLTouch STOW requested
+Recv: BLTouch Command :90
+Recv: bltouch.stow_proc() end
+Recv: >>> set_axis_is_at_home(Z)
+Recv: *** Z HOMED WITH PROBE (Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN) ***
+Recv: > probe.offset.z = -2.70
+Recv: Axis 90 home_offset = 0.00 position_shift = 0.00
+Recv: > home_offset[Z] = 0.00
+Recv:   current_position= X105.00 Y64.00 Z2.70 :
+Recv: <<< set_axis_is_at_home(Z)
+Recv:   current_position= X105.00 Y64.00 Z2.70 : sync_plan_position
+Recv:   current_position= X105.00 Y64.00 Z2.70 : > AFTER set_axis_is_at_home
+Recv:   current_position= X105.00 Y64.00 Z2.70 : Probe::set_deployed
+Recv: deploy: 0
+Recv: Probe::move_z(10.00)
+Recv: >>> do_blocking_move_to X105.00 Y64.00 Z12.70
+Recv: <<< do_blocking_move_to
+[...]
+Recv: BLTouch STOW requested
+Recv: BLTouch Command :90
+Recv: bltouch.stow_proc() end
+Recv: >>> do_blocking_move_to X105.00 Y64.00 Z12.70
+Recv: <<< do_blocking_move_to
+Recv: <<< homeaxis(Z)
+Recv: <<< home_z_safely
+Recv: >>> do_blocking_move_to X105.00 Y64.00 Z10.00
+Recv: <<< do_blocking_move_to
+[...]
+Recv:   current_position= X105.00 Y64.00 Z10.00 : sync_plan_position
+Recv: X:105.00 Y:64.00 Z:10.00 E:0.00 Count X:10500 Y:6400 Z:15950
+Recv: <<< G28
+Recv: ok
+[...]
+Send: G29
+Recv: echo:G29
+Recv:   current_position= X105.00 Y64.00 Z10.00 : >>> G29
+Recv: Machine Type: Cartesian
+Recv: Probe: BLTOUCH
+Recv: Probe Offset X-40.00 Y1.00 Z-2.70 (Left-Back & Below Nozzle)
+Recv: Auto Bed Leveling: 3POINT (disabled)
+Recv: 
+Recv:   current_position= X105.00 Y64.00 Z10.00 : Probe::set_deployed
+Recv: deploy: 1
+Recv: Probe::move_z(10.00)
+Recv: >>> do_blocking_move_to X105.00 Y64.00 Z12.70
+Recv: <<< do_blocking_move_to
+Recv: BLTouch DEPLOY requested
+Recv: BLTouch Command :10
+Recv: bltouch.deploy_proc() end
+Recv: >>> do_blocking_move_to X105.00 Y64.00 Z12.70
+Recv: <<< do_blocking_move_to
+Recv: > 3-point Leveling
+Recv: >>> Probe::probe_at_point(10.00, 10.00, raise, 0, probe_relative)
+Recv:   current_position= X105.00 Y64.00 Z12.70 :
+Recv: >>> do_blocking_move_to X50.00 Y9.00 Z12.70
+Recv: <<< do_blocking_move_to
+[...]
+Recv:   current_position= X50.00 Y9.00 Z12.70 : Probe::set_deployed
+Recv: deploy: 1
+Recv:   current_position= X50.00 Y9.00 Z12.70 : >>> Probe::run_z_probe
+Recv:   current_position= X50.00 Y9.00 Z12.70 : >>> Probe::probe_down_to_z
+Recv: BLTouch DEPLOY requested
+Recv: BLTouch Command :10
+Recv: bltouch.deploy_proc() end
+Recv: >>> do_blocking_move_to X50.00 Y9.00 Z0.70
+Recv: <<< do_blocking_move_to
+[...]
+Recv: BLTouch STOW requested
+Recv: BLTouch Command :90
+Recv: bltouch.stow_proc() end
+Recv:   current_position= X50.00 Y9.00 Z2.90 : sync_plan_position
+Recv:   current_position= X50.00 Y9.00 Z2.90 : <<< Probe::probe_down_to_z
+Recv: 1st Probe Z:2.90
+Recv: >>> do_blocking_move_to X50.00 Y9.00 Z7.90
+Recv: <<< do_blocking_move_to
+[...]
+Recv:   current_position= X50.00 Y9.00 Z7.90 : >>> Probe::probe_down_to_z
+Recv: BLTouch DEPLOY requested
+Recv: BLTouch Command :10
+Recv: bltouch.deploy_proc() end
+Recv: >>> do_blocking_move_to X50.00 Y9.00 Z0.70
+Recv: <<< do_blocking_move_to
+[...]
+Recv: BLTouch STOW requested
+Recv: BLTouch Command :90
+Recv: bltouch.stow_proc() end
+Recv:   current_position= X50.00 Y9.00 Z2.85 : sync_plan_position
+Recv:   current_position= X50.00 Y9.00 Z2.85 : <<< Probe::probe_down_to_z
+Recv: 2nd Probe Z:2.85 Discrepancy:0.06
+Recv:   current_position= X50.00 Y9.00 Z2.85 : <<< run_z_probe
+Recv: >>> do_blocking_move_to X50.00 Y9.00 Z7.85
+Recv: <<< do_blocking_move_to
+[...]
+Recv: <<< Probe::probe_at_point
+Recv: >>> Probe::probe_at_point(90.00, 10.00, raise, 0, probe_relative)
+Recv:   current_position= X50.00 Y9.00 Z7.85 :
+Recv: >>> do_blocking_move_to X130.00 Y9.00 Z7.85
+Recv: <<< do_blocking_move_to
+Recv:   current_position= X130.00 Y9.00 Z7.85 : Probe::set_deployed
+Recv: deploy: 1
+Recv:   current_position= X130.00 Y9.00 Z7.85 : >>> Probe::run_z_probe
+Recv:   current_position= X130.00 Y9.00 Z7.85 : >>> Probe::probe_down_to_z
+Recv: BLTouch DEPLOY requested
+Recv: BLTouch Command :10
+Recv: bltouch.deploy_proc() end
+Recv: >>> do_blocking_move_to X130.00 Y9.00 Z0.70
+Recv: <<< do_blocking_move_to
+[...]
+Recv: BLTouch STOW requested
+Recv: BLTouch Command :90
+Recv: bltouch.stow_proc() end
+Recv:   current_position= X130.00 Y9.00 Z3.01 : sync_plan_position
+Recv:   current_position= X130.00 Y9.00 Z3.01 : <<< Probe::probe_down_to_z
+Recv: 1st Probe Z:3.01
+Recv: >>> do_blocking_move_to X130.00 Y9.00 Z8.01
+Recv: <<< do_blocking_move_to
+[...]
+Recv:   current_position= X130.00 Y9.00 Z8.01 : >>> Probe::probe_down_to_z
+Recv: BLTouch DEPLOY requested
+Recv: BLTouch Command :10
+Recv: bltouch.deploy_proc() end
+Recv: >>> do_blocking_move_to X130.00 Y9.00 Z0.70
+Recv: <<< do_blocking_move_to
+[...]
+Recv: BLTouch STOW requested
+Recv: BLTouch Command :90
+Recv: bltouch.stow_proc() end
+Recv:   current_position= X130.00 Y9.00 Z3.26 : sync_plan_position
+Recv:   current_position= X130.00 Y9.00 Z3.26 : <<< Probe::probe_down_to_z
+Recv: 2nd Probe Z:3.26 Discrepancy:-0.25
+Recv:   current_position= X130.00 Y9.00 Z3.26 : <<< run_z_probe
+Recv: >>> do_blocking_move_to X130.00 Y9.00 Z8.26
+Recv: <<< do_blocking_move_to
+[...]
+Recv: <<< Probe::probe_at_point
+Recv: >>> Probe::probe_at_point(40.00, 120.00, raise, 0, probe_relative)
+Recv:   current_position= X130.00 Y9.00 Z8.26 :
+Recv: >>> do_blocking_move_to X80.00 Y119.00 Z8.26
+Recv: <<< do_blocking_move_to
+Recv:   current_position= X80.00 Y119.00 Z8.26 : Probe::set_deployed
+Recv: deploy: 1
+Recv:   current_position= X80.00 Y119.00 Z8.26 : >>> Probe::run_z_probe
+Recv:   current_position= X80.00 Y119.00 Z8.26 : >>> Probe::probe_down_to_z
+Recv: BLTouch DEPLOY requested
+Recv: BLTouch Command :10
+Recv: bltouch.deploy_proc() end
+Recv: >>> do_blocking_move_to X80.00 Y119.00 Z0.70
+Recv: <<< do_blocking_move_to
+[...]
+Recv: BLTouch STOW requested
+Recv: BLTouch Command :90
+Recv: bltouch.stow_proc() end
+Recv:   current_position= X80.00 Y119.00 Z3.16 : sync_plan_position
+Recv:   current_position= X80.00 Y119.00 Z3.16 : <<< Probe::probe_down_to_z
+Recv: 1st Probe Z:3.16
+Recv: >>> do_blocking_move_to X80.00 Y119.00 Z8.16
+Recv: <<< do_blocking_move_to
+[...]
+Recv:   current_position= X80.00 Y119.00 Z8.16 : >>> Probe::probe_down_to_z
+Recv: BLTouch DEPLOY requested
+Recv: BLTouch Command :10
+Recv: bltouch.deploy_proc() end
+Recv: >>> do_blocking_move_to X80.00 Y119.00 Z0.70
+Recv: <<< do_blocking_move_to
+[...]
+Recv: BLTouch STOW requested
+Recv: BLTouch Command :90
+Recv: bltouch.stow_proc() end
+Recv:   current_position= X80.00 Y119.00 Z3.16 : sync_plan_position
+Recv:   current_position= X80.00 Y119.00 Z3.16 : <<< Probe::probe_down_to_z
+Recv: 2nd Probe Z:3.16 Discrepancy:0.00
+Recv:   current_position= X80.00 Y119.00 Z3.16 : <<< run_z_probe
+Recv: >>> do_blocking_move_to X80.00 Y119.00 Z8.16
+Recv: <<< do_blocking_move_to
+[...]
+Recv: <<< Probe::probe_at_point
+Recv:   current_position= X80.00 Y119.00 Z8.16 : Probe::set_deployed
+Recv: deploy: 0
+Recv: Probe::move_z(10.00)
+Recv: >>> do_blocking_move_to X80.00 Y119.00 Z12.70
+Recv: <<< do_blocking_move_to
+Recv: BLTouch STOW requested
+Recv: BLTouch Command :90
+Recv: bltouch.stow_proc() end
+Recv: >>> do_blocking_move_to X80.00 Y119.00 Z12.70
+Recv: <<< do_blocking_move_to
+Recv:   current_position= X80.00 Y119.00 Z12.70 : > probing complete
+Recv:   current_position= X80.00 Y119.00 Z12.70 : G29 uncorrected XYZ
+Recv: Probed Z12.24  Matrix Z12.55  Discrepancy -0.32
+Recv:   current_position= X80.05 Y119.02 Z12.24 : G29 corrected XYZ
+Recv:   current_position= X80.05 Y119.02 Z12.24 : sync_plan_position
+Recv: Z Probe End Script: M280 P0 S90
+Recv: X:80.05 Y:119.02 Z:12.24 E:0.00 Count X:8000 Y:11900 Z:19751
+Recv: <<< G29
+Recv: ok
+[...]
+Send: M48 V
+Recv: echo:M48 V
+Recv: M48 Z-Probe Repeatability Test
+Recv: ? (X,Y) out of bounds.
+Recv: ok
+[...]
+Send: G0 X50 Y50 F7500
+Recv: echo:G0 X50 Y50 F7500
+Recv: ok
+[...]
+Send: M48 V
+Recv: echo:M48 V
+Recv: M48 Z-Probe Repeatability Test
+Recv:   current_position= X50.00 Y50.00 Z12.24 : Leveling ON
+Recv:   current_position= X49.96 Y49.98 Z12.16 : ...Now OFF
+Recv:   current_position= X49.96 Y49.98 Z12.16 : sync_plan_position
+Recv: >>> Probe::probe_at_point(10.00, 51.00, raise, 1, probe_relative)
+Recv:   current_position= X49.96 Y49.98 Z12.16 :
+Recv: >>> do_blocking_move_to X50.00 Y50.00 Z12.16
+Recv: <<< do_blocking_move_to
+Recv:   current_position= X50.00 Y50.00 Z12.16 : Probe::set_deployed
+Recv: deploy: 1
+Recv: Probe::move_z(10.00)
+Recv: >>> do_blocking_move_to X50.00 Y50.00 Z12.70
+Recv: <<< do_blocking_move_to
+[...]
+Recv: BLTouch DEPLOY requested
+Recv: BLTouch Command :10
+Recv: bltouch.deploy_proc() end
+Recv: >>> do_blocking_move_to X50.00 Y50.00 Z12.70
+Recv: <<< do_blocking_move_to
+Recv:   current_position= X50.00 Y50.00 Z12.70 : >>> Probe::run_z_probe
+Recv:   current_position= X50.00 Y50.00 Z12.70 : >>> Probe::probe_down_to_z
+Recv: BLTouch DEPLOY requested
+Recv: BLTouch Command :10
+Recv: bltouch.deploy_proc() end
+Recv: >>> do_blocking_move_to X50.00 Y50.00 Z0.70
+Recv: <<< do_blocking_move_to
+[...]
+Recv: BLTouch STOW requested
+Recv: BLTouch Command :90
+Recv: bltouch.stow_proc() end
+Recv:   current_position= X50.00 Y50.00 Z2.11 : sync_plan_position
+Recv:   current_position= X50.00 Y50.00 Z2.11 : <<< Probe::probe_down_to_z
+Recv: 1st Probe Z:2.11
+Recv: >>> do_blocking_move_to X50.00 Y50.00 Z7.11
+Recv: <<< do_blocking_move_to
+[...]
+Recv:   current_position= X50.00 Y50.00 Z7.11 : >>> Probe::probe_down_to_z
+Recv: BLTouch DEPLOY requested
+Recv: BLTouch Command :10
+Recv: bltouch.deploy_proc() end
+Recv: >>> do_blocking_move_to X50.00 Y50.00 Z0.70
+Recv: <<< do_blocking_move_to
+[...]
+Recv: BLTouch STOW requested
+Recv: BLTouch Command :90
+Recv: bltouch.stow_proc() end
+Recv:   current_position= X50.00 Y50.00 Z1.98 : sync_plan_position
+Recv:   current_position= X50.00 Y50.00 Z1.98 : <<< Probe::probe_down_to_z
+Recv: 2nd Probe Z:1.98 Discrepancy:0.13
+Recv:   current_position= X50.00 Y50.00 Z1.98 : <<< run_z_probe
+Recv: >>> do_blocking_move_to X50.00 Y50.00 Z6.98
+Recv: <<< do_blocking_move_to
+[...]
+Recv: <<< Probe::probe_at_point
+Recv: >>> Probe::probe_at_point(10.00, 51.00, raise, 0, probe_relative)
+Recv:   current_position= X50.00 Y50.00 Z6.98 :
+Recv: >>> do_blocking_move_to X50.00 Y50.00 Z6.98
+Recv: <<< do_blocking_move_to
+Recv:   current_position= X50.00 Y50.00 Z6.98 : Probe::set_deployed
+Recv: deploy: 1
+Recv:   current_position= X50.00 Y50.00 Z6.98 : >>> Probe::run_z_probe
+Recv:   current_position= X50.00 Y50.00 Z6.98 : >>> Probe::probe_down_to_z
+Recv: BLTouch DEPLOY requested
+Recv: BLTouch Command :10
+Recv: bltouch.deploy_proc() end
+Recv: >>> do_blocking_move_to X50.00 Y50.00 Z0.70
+Recv: <<< do_blocking_move_to
+[...]
+Recv: BLTouch STOW requested
+Recv: BLTouch Command :90
+Recv: bltouch.stow_proc() end
+Recv:   current_position= X50.00 Y50.00 Z1.99 : sync_plan_position
+Recv:   current_position= X50.00 Y50.00 Z1.99 : <<< Probe::probe_down_to_z
+Recv: 1st Probe Z:1.99
+Recv: >>> do_blocking_move_to X50.00 Y50.00 Z6.99
+Recv: <<< do_blocking_move_to
+[...]
+Recv:   current_position= X50.00 Y50.00 Z6.99 : >>> Probe::probe_down_to_z
+Recv: BLTouch DEPLOY requested
+Recv: BLTouch Command :10
+Recv: bltouch.deploy_proc() end
+Recv: >>> do_blocking_move_to X50.00 Y50.00 Z0.70
+Recv: <<< do_blocking_move_to
+[...]
+Recv: BLTouch STOW requested
+Recv: BLTouch Command :90
+Recv: bltouch.stow_proc() end
+Recv:   current_position= X50.00 Y50.00 Z1.88 : sync_plan_position
+Recv:   current_position= X50.00 Y50.00 Z1.88 : <<< Probe::probe_down_to_z
+Recv: 2nd Probe Z:1.88 Discrepancy:0.12
+Recv:   current_position= X50.00 Y50.00 Z1.88 : <<< run_z_probe
+Recv: >>> do_blocking_move_to X50.00 Y50.00 Z6.88
+Recv: <<< do_blocking_move_to
+Recv: <<< Probe::probe_at_point
+Recv: >>> Probe::probe_at_point(10.00, 51.00, raise, 0, probe_relative)
+Recv:   current_position= X50.00 Y50.00 Z6.88 :
+Recv: >>> do_blocking_move_to X50.00 Y50.00 Z6.88
+Recv: <<< do_blocking_move_to
+Recv:   current_position= X50.00 Y50.00 Z6.88 : Probe::set_deployed
+Recv: deploy: 1
+Recv:   current_position= X50.00 Y50.00 Z6.88 : >>> Probe::run_z_probe
+Recv:   current_position= X50.00 Y50.00 Z6.88 : >>> Probe::probe_down_to_z
+Recv: BLTouch DEPLOY requested
+Recv: BLTouch Command :10
+Recv: bltouch.deploy_proc() end
+Recv: >>> do_blocking_move_to X50.00 Y50.00 Z0.70
+Recv: <<< do_blocking_move_to
+[...]
+Recv: BLTouch STOW requested
+Recv: BLTouch Command :90
+Recv: bltouch.stow_proc() end
+Recv:   current_position= X50.00 Y50.00 Z1.99 : sync_plan_position
+Recv:   current_position= X50.00 Y50.00 Z1.99 : <<< Probe::probe_down_to_z
+Recv: 1st Probe Z:1.99
+Recv: >>> do_blocking_move_to X50.00 Y50.00 Z6.99
+Recv: <<< do_blocking_move_to
+[...]
+Recv:   current_position= X50.00 Y50.00 Z6.99 : >>> Probe::probe_down_to_z
+Recv: BLTouch DEPLOY requested
+Recv: BLTouch Command :10
+Recv: bltouch.deploy_proc() end
+Recv: >>> do_blocking_move_to X50.00 Y50.00 Z0.70
+Recv: <<< do_blocking_move_to
+[...]
+Recv: BLTouch STOW requested
+Recv: BLTouch Command :90
+Recv: bltouch.stow_proc() end
+Recv:   current_position= X50.00 Y50.00 Z2.00 : sync_plan_position
+Recv:   current_position= X50.00 Y50.00 Z2.00 : <<< Probe::probe_down_to_z
+Recv: 2nd Probe Z:2.00 Discrepancy:-0.01
+Recv:   current_position= X50.00 Y50.00 Z2.00 : <<< run_z_probe
+Recv: >>> do_blocking_move_to X50.00 Y50.00 Z7.00
+Recv: <<< do_blocking_move_to
+[...]
+Recv: <<< Probe::probe_at_point
+Recv: >>> Probe::probe_at_point(10.00, 51.00, raise, 0, probe_relative)
+Recv:   current_position= X50.00 Y50.00 Z7.00 :
+Recv: >>> do_blocking_move_to X50.00 Y50.00 Z7.00
+Recv: <<< do_blocking_move_to
+Recv:   current_position= X50.00 Y50.00 Z7.00 : Probe::set_deployed
+Recv: deploy: 1
+Recv:   current_position= X50.00 Y50.00 Z7.00 : >>> Probe::run_z_probe
+Recv:   current_position= X50.00 Y50.00 Z7.00 : >>> Probe::probe_down_to_z
+Recv: BLTouch DEPLOY requested
+Recv: BLTouch Command :10
+Recv: bltouch.deploy_proc() end
+Recv: >>> do_blocking_move_to X50.00 Y50.00 Z0.70
+Recv: <<< do_blocking_move_to
+[...]
+Recv: BLTouch STOW requested
+Recv: BLTouch Command :90
+Recv: bltouch.stow_proc() end
+Recv:   current_position= X50.00 Y50.00 Z1.96 : sync_plan_position
+Recv:   current_position= X50.00 Y50.00 Z1.96 : <<< Probe::probe_down_to_z
+Recv: 1st Probe Z:1.96
+Recv: >>> do_blocking_move_to X50.00 Y50.00 Z6.96
+Recv: <<< do_blocking_move_to
+[...]
+Recv:   current_position= X50.00 Y50.00 Z6.96 : >>> Probe::probe_down_to_z
+Recv: BLTouch DEPLOY requested
+Recv: BLTouch Command :10
+Recv: bltouch.deploy_proc() end
+Recv: >>> do_blocking_move_to X50.00 Y50.00 Z0.70
+Recv: <<< do_blocking_move_to
+Recv: BLTouch STOW requested
+Recv: BLTouch Command :90
+Recv: bltouch.stow_proc() end
+Recv:   current_position= X50.00 Y50.00 Z1.92 : sync_plan_position
+Recv:   current_position= X50.00 Y50.00 Z1.92 : <<< Probe::probe_down_to_z
+Recv: 2nd Probe Z:1.92 Discrepancy:0.04
+Recv:   current_position= X50.00 Y50.00 Z1.92 : <<< run_z_probe
+Recv: >>> do_blocking_move_to X50.00 Y50.00 Z6.92
+Recv: <<< do_blocking_move_to
+[...]
+Recv: <<< Probe::probe_at_point
+Recv: >>> Probe::probe_at_point(10.00, 51.00, raise, 0, probe_relative)
+Recv:   current_position= X50.00 Y50.00 Z6.92 :
+Recv: >>> do_blocking_move_to X50.00 Y50.00 Z6.92
+Recv: <<< do_blocking_move_to
+Recv:   current_position= X50.00 Y50.00 Z6.92 : Probe::set_deployed
+Recv: deploy: 1
+Recv:   current_position= X50.00 Y50.00 Z6.92 : >>> Probe::run_z_probe
+Recv:   current_position= X50.00 Y50.00 Z6.92 : >>> Probe::probe_down_to_z
+Recv: BLTouch DEPLOY requested
+Recv: BLTouch Command :10
+Recv: bltouch.deploy_proc() end
+Recv: >>> do_blocking_move_to X50.00 Y50.00 Z0.70
+Recv: <<< do_blocking_move_to
+[...]
+Recv: BLTouch STOW requested
+Recv: BLTouch Command :90
+Recv: bltouch.stow_proc() end
+Recv:   current_position= X50.00 Y50.00 Z1.98 : sync_plan_position
+Recv:   current_position= X50.00 Y50.00 Z1.98 : <<< Probe::probe_down_to_z
+Recv: 1st Probe Z:1.98
+Recv: >>> do_blocking_move_to X50.00 Y50.00 Z6.98
+Recv: <<< do_blocking_move_to
+[...]
+Recv:   current_position= X50.00 Y50.00 Z6.98 : >>> Probe::probe_down_to_z
+Recv: BLTouch DEPLOY requested
+Recv: BLTouch Command :10
+Recv: bltouch.deploy_proc() end
+Recv: >>> do_blocking_move_to X50.00 Y50.00 Z0.70
+Recv: <<< do_blocking_move_to
+[...]
+Recv: BLTouch STOW requested
+Recv: BLTouch Command :90
+Recv: bltouch.stow_proc() end
+Recv:   current_position= X50.00 Y50.00 Z1.96 : sync_plan_position
+Recv:   current_position= X50.00 Y50.00 Z1.96 : <<< Probe::probe_down_to_z
+Recv: 2nd Probe Z:1.96 Discrepancy:0.02
+Recv:   current_position= X50.00 Y50.00 Z1.96 : <<< run_z_probe
+Recv: >>> do_blocking_move_to X50.00 Y50.00 Z6.96
+Recv: <<< do_blocking_move_to
+[...]
+Recv: <<< Probe::probe_at_point
+Recv: >>> Probe::probe_at_point(10.00, 51.00, raise, 0, probe_relative)
+Recv:   current_position= X50.00 Y50.00 Z6.96 :
+Recv: >>> do_blocking_move_to X50.00 Y50.00 Z6.96
+Recv: <<< do_blocking_move_to
+Recv:   current_position= X50.00 Y50.00 Z6.96 : Probe::set_deployed
+Recv: deploy: 1
+Recv:   current_position= X50.00 Y50.00 Z6.96 : >>> Probe::run_z_probe
+Recv:   current_position= X50.00 Y50.00 Z6.96 : >>> Probe::probe_down_to_z
+Recv: BLTouch DEPLOY requested
+Recv: BLTouch Command :10
+Recv: bltouch.deploy_proc() end
+Recv: >>> do_blocking_move_to X50.00 Y50.00 Z0.70
+Recv: <<< do_blocking_move_to
+[...]
+Recv: BLTouch STOW requested
+Recv: BLTouch Command :90
+Recv: bltouch.stow_proc() end
+Recv:   current_position= X50.00 Y50.00 Z2.07 : sync_plan_position
+Recv:   current_position= X50.00 Y50.00 Z2.07 : <<< Probe::probe_down_to_z
+Recv: 1st Probe Z:2.07
+Recv: >>> do_blocking_move_to X50.00 Y50.00 Z7.07
+Recv: <<< do_blocking_move_to
+Recv:   current_position= X50.00 Y50.00 Z7.07 : >>> Probe::probe_down_to_z
+Recv: BLTouch DEPLOY requested
+Recv: BLTouch Command :10
+Recv: bltouch.deploy_proc() end
+Recv: >>> do_blocking_move_to X50.00 Y50.00 Z0.70
+Recv: <<< do_blocking_move_to
+[...]
+Recv: BLTouch STOW requested
+Recv: BLTouch Command :90
+Recv: bltouch.stow_proc() end
+Recv:   current_position= X50.00 Y50.00 Z1.99 : sync_plan_position
+Recv:   current_position= X50.00 Y50.00 Z1.99 : <<< Probe::probe_down_to_z
+Recv: 2nd Probe Z:1.99 Discrepancy:0.08
+Recv:   current_position= X50.00 Y50.00 Z1.99 : <<< run_z_probe
+Recv: >>> do_blocking_move_to X50.00 Y50.00 Z6.99
+Recv: <<< do_blocking_move_to
+[...]
+Recv: <<< Probe::probe_at_point
+Recv: >>> Probe::probe_at_point(10.00, 51.00, raise, 0, probe_relative)
+Recv:   current_position= X50.00 Y50.00 Z6.99 :
+Recv: >>> do_blocking_move_to X50.00 Y50.00 Z6.99
+Recv: <<< do_blocking_move_to
+Recv:   current_position= X50.00 Y50.00 Z6.99 : Probe::set_deployed
+Recv: deploy: 1
+Recv:   current_position= X50.00 Y50.00 Z6.99 : >>> Probe::run_z_probe
+Recv:   current_position= X50.00 Y50.00 Z6.99 : >>> Probe::probe_down_to_z
+Recv: BLTouch DEPLOY requested
+Recv: BLTouch Command :10
+Recv: bltouch.deploy_proc() end
+Recv: >>> do_blocking_move_to X50.00 Y50.00 Z0.70
+Recv: <<< do_blocking_move_to
+[...]
+Recv: BLTouch STOW requested
+Recv: BLTouch Command :90
+Recv: bltouch.stow_proc() end
+Recv:   current_position= X50.00 Y50.00 Z1.93 : sync_plan_position
+Recv:   current_position= X50.00 Y50.00 Z1.93 : <<< Probe::probe_down_to_z
+Recv: 1st Probe Z:1.93
+Recv: >>> do_blocking_move_to X50.00 Y50.00 Z6.93
+Recv: <<< do_blocking_move_to
+[...]
+Recv:   current_position= X50.00 Y50.00 Z6.93 : >>> Probe::probe_down_to_z
+Recv: BLTouch DEPLOY requested
+Recv: BLTouch Command :10
+Recv: bltouch.deploy_proc() end
+Recv: >>> do_blocking_move_to X50.00 Y50.00 Z0.70
+Recv: <<< do_blocking_move_to
+[...]
+Recv: BLTouch STOW requested
+Recv: BLTouch Command :90
+Recv: bltouch.stow_proc() end
+Recv:   current_position= X50.00 Y50.00 Z2.14 : sync_plan_position
+Recv:   current_position= X50.00 Y50.00 Z2.14 : <<< Probe::probe_down_to_z
+Recv: 2nd Probe Z:2.14 Discrepancy:-0.21
+Recv:   current_position= X50.00 Y50.00 Z2.14 : <<< run_z_probe
+Recv: >>> do_blocking_move_to X50.00 Y50.00 Z7.14
+Recv: <<< do_blocking_move_to
+[...]
+Recv: <<< Probe::probe_at_point
+Recv: >>> Probe::probe_at_point(10.00, 51.00, raise, 0, probe_relative)
+Recv:   current_position= X50.00 Y50.00 Z7.14 :
+Recv: >>> do_blocking_move_to X50.00 Y50.00 Z7.14
+Recv: <<< do_blocking_move_to
+Recv:   current_position= X50.00 Y50.00 Z7.14 : Probe::set_deployed
+Recv: deploy: 1
+Recv:   current_position= X50.00 Y50.00 Z7.14 : >>> Probe::run_z_probe
+Recv:   current_position= X50.00 Y50.00 Z7.14 : >>> Probe::probe_down_to_z
+Recv: BLTouch DEPLOY requested
+Recv: BLTouch Command :10
+Recv: bltouch.deploy_proc() end
+Recv: >>> do_blocking_move_to X50.00 Y50.00 Z0.70
+Recv: <<< do_blocking_move_to
+Recv: BLTouch STOW requested
+Recv: BLTouch Command :90
+Recv: bltouch.stow_proc() end
+Recv:   current_position= X50.00 Y50.00 Z2.14 : sync_plan_position
+Recv:   current_position= X50.00 Y50.00 Z2.14 : <<< Probe::probe_down_to_z
+Recv: 1st Probe Z:2.14
+Recv: >>> do_blocking_move_to X50.00 Y50.00 Z7.14
+Recv: <<< do_blocking_move_to
+[...]
+Recv:   current_position= X50.00 Y50.00 Z7.14 : >>> Probe::probe_down_to_z
+Recv: BLTouch DEPLOY requested
+Recv: BLTouch Command :10
+Recv: bltouch.deploy_proc() end
+Recv: >>> do_blocking_move_to X50.00 Y50.00 Z0.70
+Recv: <<< do_blocking_move_to
+[...]
+Recv: BLTouch STOW requested
+Recv: BLTouch Command :90
+Recv: bltouch.stow_proc() end
+Recv:   current_position= X50.00 Y50.00 Z2.32 : sync_plan_position
+Recv:   current_position= X50.00 Y50.00 Z2.32 : <<< Probe::probe_down_to_z
+Recv: 2nd Probe Z:2.32 Discrepancy:-0.18
+Recv:   current_position= X50.00 Y50.00 Z2.32 : <<< run_z_probe
+Recv: >>> do_blocking_move_to X50.00 Y50.00 Z7.32
+Recv: <<< do_blocking_move_to
+[...]
+Recv: <<< Probe::probe_at_point
+Recv: >>> Probe::probe_at_point(10.00, 51.00, raise, 0, probe_relative)
+Recv:   current_position= X50.00 Y50.00 Z7.32 :
+Recv: >>> do_blocking_move_to X50.00 Y50.00 Z7.32
+Recv: <<< do_blocking_move_to
+Recv:   current_position= X50.00 Y50.00 Z7.32 : Probe::set_deployed
+Recv: deploy: 1
+Recv:   current_position= X50.00 Y50.00 Z7.32 : >>> Probe::run_z_probe
+Recv:   current_position= X50.00 Y50.00 Z7.32 : >>> Probe::probe_down_to_z
+Recv: BLTouch DEPLOY requested
+Recv: BLTouch Command :10
+Recv: bltouch.deploy_proc() end
+Recv: >>> do_blocking_move_to X50.00 Y50.00 Z0.70
+Recv: <<< do_blocking_move_to
+[...]
+Recv: BLTouch STOW requested
+Recv: BLTouch Command :90
+Recv: bltouch.stow_proc() end
+Recv:   current_position= X50.00 Y50.00 Z2.39 : sync_plan_position
+Recv:   current_position= X50.00 Y50.00 Z2.39 : <<< Probe::probe_down_to_z
+Recv: 1st Probe Z:2.39
+Recv: >>> do_blocking_move_to X50.00 Y50.00 Z7.39
+Recv: <<< do_blocking_move_to
+[...]
+Recv:   current_position= X50.00 Y50.00 Z7.39 : >>> Probe::probe_down_to_z
+Recv: BLTouch DEPLOY requested
+Recv: BLTouch Command :10
+Recv: bltouch.deploy_proc() end
+Recv: >>> do_blocking_move_to X50.00 Y50.00 Z0.70
+Recv: <<< do_blocking_move_to
+[...]
+Recv: BLTouch STOW requested
+Recv: BLTouch Command :90
+Recv: bltouch.stow_proc() end
+Recv:   current_position= X50.00 Y50.00 Z2.42 : sync_plan_position
+Recv:   current_position= X50.00 Y50.00 Z2.42 : <<< Probe::probe_down_to_z
+Recv: 2nd Probe Z:2.42 Discrepancy:-0.02
+Recv:   current_position= X50.00 Y50.00 Z2.42 : <<< run_z_probe
+Recv: >>> do_blocking_move_to X50.00 Y50.00 Z7.42
+Recv: <<< do_blocking_move_to
+Recv: <<< Probe::probe_at_point
+Recv: >>> Probe::probe_at_point(10.00, 51.00, raise, 0, probe_relative)
+Recv:   current_position= X50.00 Y50.00 Z7.42 :
+Recv: >>> do_blocking_move_to X50.00 Y50.00 Z7.42
+Recv: <<< do_blocking_move_to
+Recv:   current_position= X50.00 Y50.00 Z7.42 : Probe::set_deployed
+Recv: deploy: 1
+Recv:   current_position= X50.00 Y50.00 Z7.42 : >>> Probe::run_z_probe
+Recv:   current_position= X50.00 Y50.00 Z7.42 : >>> Probe::probe_down_to_z
+Recv: BLTouch DEPLOY requested
+Recv: BLTouch Command :10
+Recv: bltouch.deploy_proc() end
+Recv: >>> do_blocking_move_to X50.00 Y50.00 Z0.70
+Recv: <<< do_blocking_move_to
+[...]
+Recv: BLTouch STOW requested
+Recv: BLTouch Command :90
+Recv: bltouch.stow_proc() end
+Recv:   current_position= X50.00 Y50.00 Z2.47 : sync_plan_position
+Recv:   current_position= X50.00 Y50.00 Z2.47 : <<< Probe::probe_down_to_z
+Recv: 1st Probe Z:2.47
+Recv: >>> do_blocking_move_to X50.00 Y50.00 Z7.47
+Recv: <<< do_blocking_move_to
+[...]
+Recv:   current_position= X50.00 Y50.00 Z7.47 : >>> Probe::probe_down_to_z
+Recv: BLTouch DEPLOY requested
+Recv: BLTouch Command :10
+Recv: bltouch.deploy_proc() end
+Recv: >>> do_blocking_move_to X50.00 Y50.00 Z0.70
+Recv: <<< do_blocking_move_to
+[...]
+Recv: BLTouch STOW requested
+Recv: BLTouch Command :90
+Recv: bltouch.stow_proc() end
+Recv:   current_position= X50.00 Y50.00 Z2.57 : sync_plan_position
+Recv:   current_position= X50.00 Y50.00 Z2.57 : <<< Probe::probe_down_to_z
+Recv: 2nd Probe Z:2.57 Discrepancy:-0.10
+Recv:   current_position= X50.00 Y50.00 Z2.57 : <<< run_z_probe
+Recv: >>> do_blocking_move_to X50.00 Y50.00 Z7.57
+Recv: <<< do_blocking_move_to
+[...]
+Recv: <<< Probe::probe_at_point
+Recv: >>> Probe::probe_at_point(10.00, 51.00, raise, 0, probe_relative)
+Recv:   current_position= X50.00 Y50.00 Z7.57 :
+Recv: >>> do_blocking_move_to X50.00 Y50.00 Z7.57
+Recv: <<< do_blocking_move_to
+Recv:   current_position= X50.00 Y50.00 Z7.57 : Probe::set_deployed
+Recv: deploy: 1
+Recv:   current_position= X50.00 Y50.00 Z7.57 : >>> Probe::run_z_probe
+Recv:   current_position= X50.00 Y50.00 Z7.57 : >>> Probe::probe_down_to_z
+Recv: BLTouch DEPLOY requested
+Recv: BLTouch Command :10
+Recv: bltouch.deploy_proc() end
+Recv: >>> do_blocking_move_to X50.00 Y50.00 Z0.70
+Recv: <<< do_blocking_move_to
+[...]
+Recv: BLTouch STOW requested
+Recv: BLTouch Command :90
+Recv: bltouch.stow_proc() end
+Recv:   current_position= X50.00 Y50.00 Z2.65 : sync_plan_position
+Recv:   current_position= X50.00 Y50.00 Z2.65 : <<< Probe::probe_down_to_z
+Recv: 1st Probe Z:2.65
+Recv: >>> do_blocking_move_to X50.00 Y50.00 Z7.65
+Recv: <<< do_blocking_move_to
+Recv:   current_position= X50.00 Y50.00 Z7.65 : >>> Probe::probe_down_to_z
+Recv: BLTouch DEPLOY requested
+Recv: BLTouch Command :10
+Recv: bltouch.deploy_proc() end
+Recv: >>> do_blocking_move_to X50.00 Y50.00 Z0.70
+Recv: <<< do_blocking_move_to
+[...]
+Recv: BLTouch STOW requested
+Recv: BLTouch Command :90
+Recv: bltouch.stow_proc() end
+Recv:   current_position= X50.00 Y50.00 Z2.55 : sync_plan_position
+Recv:   current_position= X50.00 Y50.00 Z2.55 : <<< Probe::probe_down_to_z
+Recv: 2nd Probe Z:2.55 Discrepancy:0.10
+Recv:   current_position= X50.00 Y50.00 Z2.55 : <<< run_z_probe
+Recv: >>> do_blocking_move_to X50.00 Y50.00 Z7.55
+Recv: <<< do_blocking_move_to
+[...]
+Recv: <<< Probe::probe_at_point
+Recv:   current_position= X50.00 Y50.00 Z7.55 : Probe::set_deployed
+Recv: deploy: 0
+Recv: Probe::move_z(10.00)
+Recv: >>> do_blocking_move_to X50.00 Y50.00 Z12.70
+Recv: <<< do_blocking_move_to
+Recv: BLTouch STOW requested
+Recv: BLTouch Command :90
+Recv: bltouch.stow_proc() end
+Recv: >>> do_blocking_move_to X50.00 Y50.00 Z12.70
+Recv: <<< do_blocking_move_to
+Recv: Finished!
+Recv: Mean: -0.532865 Min: -0.776 Max: -0.114 Range: 0.662
+Recv: Standard Deviation: 0.242131
+Recv: 
+Recv:   current_position= X50.00 Y50.00 Z12.70 : Leveling OFF
+Recv:   current_position= X50.05 Y50.02 Z12.78 : ...Now ON
+Recv:   current_position= X50.05 Y50.02 Z12.78 : sync_plan_position
+Recv: X:50.05 Y:50.02 Z:12.78 E:0.00 Count X:5000 Y:5000 Z:20257
+Recv: ok

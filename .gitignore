@@ -184,3 +184,4 @@ cmake-build-*
 
 #Python
 __pycache__
+Marlin/src/pins/sanguino/pins_MELZI_TRONXY - backup.h
