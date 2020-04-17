@@ -2274,3 +2274,16 @@
 // Allow servo angle to be edited and saved to EEPROM
 //#define EDITABLE_SERVO_ANGLES
 
+// JVS 4/16 ENABLED FOR DEBUGGING BED LEVEL
+//#17399 ISSUE
+//Whenever there are homing or leveling issues, we now ask everyone to follow a standard procedure to gather more information so that we're not just taking stabs in the dark. Here is the boilerplate:
+//Download Marlin bugfix-2.0.x to test with the latest code.
+//Enable DEBUG_LEVELING_FEATURE and M114_DETAIL and re-flash the firmware.
+//Connect to your printer from host software such as Cura, Printrun or Repetier Host.
+//Issue the command M111 S247 to enable maximum logging.
+//Perform a G28 to do your standard homing procedure.
+//Do a G29 to probe the bed. This will also enable bed leveling.
+//Copy the log output into a .TXT file and attach it to your next reply.
+
+#define DEBUG_LEVELING_FEATURE
+#define M114_DETAIL
