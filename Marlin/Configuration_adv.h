@@ -1492,7 +1492,8 @@
  *
  * Warning: Does not respect endstops!
  */
- // 4/18/2020 tried this on makerStart and didn't show up in menu !
+
+
 #define BABYSTEPPING
 #if ENABLED(BABYSTEPPING)
   //#define INTEGRATED_BABYSTEPPING         // EXPERIMENTAL integration of babystepping into the Stepper ISR
